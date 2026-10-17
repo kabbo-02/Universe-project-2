@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Planets,galaxies,stars and the mysteries of our universe.">
+    <title>Galaxy Universe Explore Space</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="shooting-stars">
+        <span></span>
+       <span></span> 
+       <span></span>
+       <span></span>
+       <span></span> 
+       <span></span>
+       <span></span>
+    </div>
+    <header class="navbar">
+        <a href="#home" class="logo">GALAXY<span>.</span></a>
+        <nav>
+        <a href="#home">Home</a>
+         <a href="#Solar-system">Solar System</a>
+          <a href="#planets">Planets</a>
+           <a href="#discoveries">Discoveries</a>
+           </nav>
+           <div class="auth-buttons">
+    <button type="button" class="login-btn" onclick="openAuth('login')">
+        Login
+    </button>
+
+    <button type="button" class="signup-btn" onclick="openAuth('signup')">
+        Sign Up
+    </button>
+</div>
+    </header>
+
+           <main>
+            <section id="home" class="hero">
+    
+                <p class="eyebrow">Welcome To My Cosmos</p>
+                <h1>
+                    Explore The <span>UNIVERSE</span>
+                </h1>
+                <p class="hero-description">
+                    Journey Beyond The Stars and discover the wonders of out infinite universe
+                </p>
+                
+<a href="#Solar-system" class="explore-btn">
+    Explore Space
+</a>
+
+            </section>
+            
+<section id="Solar-system" class="section">
+    <p class="eyebrow">Our Cosmic Neighbourhood</p>
+
+    <h2>The Solar System</h2>
+
+    <p class="section-description">
+        Discover the Sun and the planets that orbit around it.
+    </p>
+   <div class="solar-system">
+    <div class="sun-area">
+        <img src="images/sun2.png"
+             alt="The Sun"
+             class="real-sun-image">
+
+        <h3>THE SUN</h3>
+        <p>Our Solar System's Star</p>
+    </div>
+
+<div class="earth-area">
+    <a href="earth.html" class="earth-link"
+       aria-label="Explore Planet Earth">
+
+        <img src="images/earth3.png"
+             alt="Real Planet Earth"
+             class="real-earth-image">
+              <h3>EARTH</h3>
+    </a>
+
+<div class="mars-area">
+    <a href="mars.html" class="mars-link"
+       aria-label="Explore Planet Mars">
+        <img src="images/mars1.png"
+             alt="Real Planet Mars"
+             class="real-mars-image">
+    </a>
+
+    <p class="mars-label"> MARS</p>
+</div>
+
+<div class="saturn-area">
+    <a href="saturn.html" class="saturn-link"
+       aria-label="Explore Planet Saturn">
+        <img src="images/saturn.png"
+             alt="Real Planet Saturn"
+             class="real-saturn-image">
+    </a>
+
+    <p class="saturn-label"><bold>SATURN</bold></p>
+</div>
+
+</div>
+        <div class="earth-info">
+
+            <p class="info-tag">✦ PLANETARY DATABASE</p>
+            <h3>Planet <span>Earth</span></h3>
+            
+<p class="earth-intro">
+    Our pale blue home. A world of oceans,
+    living ecosystems and endless possibilities.
+</p>
+
+
+            <div class="earth-stats">
+
+                <div class="stat-item">
+                    <span>DIAMETER</span>
+                    <strong>12,742 <small>km</small></strong>
+                </div>
+                <div class="stat-item">
+                    <span>FROM THE SUN</span>
+                    <strong>149.6 <small>million km</small></strong>
+                </div>
+
+                <div class="stat-item">
+                    <span>ONE ORBIT</span>
+                    <strong>365.25 <small>days</small></strong>
+                </div>
+                <div class="stat-item">
+                    <span>NATURAL MOONS</span>
+                    <strong>01 <small>Moon</small></strong>
+                </div>
+            </div>
+            <div class="earth-status">
+                <span class="status-dot"></span>
+                THIRD PLANET FROM THE SUN
+            </div>
+        </div>
+    </div>
+</section>
+            <section id="planets" class="section">
+                <p class="eyebrow"> Worlds Beyonds Our Own</p>
+                <h2>Explore the Planets </h2>
+                <div class="planet-grid">
+                    
+<article class="planet-card">
+    <a href="earth.html" class="planet-page-link">
+        <img src="images/earth.jpg"
+             alt="Planet Earth"
+             class="planet-image earth">
+    </a>
+
+    <h3>EARTH</h3>
+    <p>Our Home, A world full of life</p>
+    <a href="earth.html">Discover Earth</a>
+</article>
+
+                   
+<article class="planet-card">
+    <a href="mars.html" class="planet-page-link">
+        <img src="images/mars.jpg"
+             alt="Planet Mars"
+             class="planet-image">
+    </a>
+
+    <h3>MARS</h3>
+    <p>The Red Planet</p>
+
+    <a href="mars.html">Discover Mars</a>
+</article>
+
+                   
+<article class="planet-card">
+    <a href="jupiter.html" class="planet-page-link">
+        <img src="images/jupiter.jpg"
+             alt="Planet Jupiter"
+             class="planet-image jupiter">
+    </a>
+
+    <h3>JUPITER</h3>
+
+    <p>A giant world of storms and swirling clouds</p>
+
+    <a href="jupiter.html">Discover Jupiter</a>
+</article>
+
+                   
+<article class="planet-card">
+    <a href="saturn.html" class="planet-page-link">
+        <img src="images/saturn.jpg"
+             alt="Planet Saturn"
+             class="planet-image saturn">
+    </a>
+
+    <h3>SATURN</h3>
+
+    <p>A magnificent planet famous for its rings</p>
+
+    <a href="saturn.html">Discover Saturn</a>
+</article>
+
+                </div>
+            </section>
+            <section id="discoveries" class="section">
+                <p class="eyebrow">Secret Of Cosmos></p>
+                <h2>Cosmic Discoveries</h2>
+                <div class="discovery-grid">
+                    <article class="discovery-card">
+                        <h3>Black Holes</h3>
+                        <p>
+                            Explore regions of space where gravity is so strong that 
+                            even light cannnot escape
+                        </p>
+                    </article>
+                    <article class="discovery-card">
+                        <h3>Nebulae</h3>
+                        <p>
+                            Discover enourmous clouds of gas and dust
+                            where stars can form
+                        </p>
+                    </article>
+                    <article class="discovery-card">
+                        <h3>Distant Galaxies</h3>
+                        <p>
+                           Travel through vast collections of stars,
+                           gas,dust and dark matter.
+                        </p>
+                    </article>
+                </div>
+            </section>
+           </main>
+<section id="userDashboard" class="user-dashboard" hidden>
+
+    <div class="dashboard-heading">
+        <p class="eyebrow">YOUR COSMIC JOURNEY</p>
+        <h1>Welcome, <span id="welcomeName">Explorer</span>!</h1>
+        <p>Your personal universe starts here.</p>
+    </div>
+    <nav class="dashboard-nav">
+        <button type="button" data-view="overview">Overview</button>
+        <button type="button" data-view="profile">My Profile</button>
+        <button type="button" data-view="favourites">Favourites</button>
+        <button type="button" data-view="history">Recently Explored</button>
+        <button type="button" data-view="achievements">Achievements</button>
+    </nav>
+    <div class="dashboard-view" id="overviewView">
+
+        <div class="welcome-card">
+            <div>
+                <p class="info-tag">SPACE EXPLORER</p>
+                <h2 id="overviewName">Welcome, Explorer</h2>
+                <p id="overviewEmail"></p>
+                <p>Continue discovering the universe.</p>
+            </div>
+
+            <img id="dashboardAvatar"
+                 class="dashboard-avatar"
+                 src="images/earth.jpg"
+                 alt="Your profile picture">
+        </div>
+
+        <div class="dashboard-stats">
+            <article class="dashboard-stat">
+                <span>PLANETS EXPLORED</span>
+                <strong id="exploredCount">0</strong>
+            </article>
+
+            <article class="dashboard-stat">
+                <span>FAVOURITES</span>
+                <strong id="favouriteCount">0</strong>
+            </article>
+
+            <article class="dashboard-stat">
+                <span>ACHIEVEMENTS</span>
+                <strong id="achievementCount">0</strong>
+            </article>
+        </div>
+
+        <div class="dashboard-panel">
+            <h2>Explorer Progress</h2>
+            <p id="progressText">Explore planets to start your journey.</p>
+
+            <div class="progress-track">
+                <div id="progressBar" class="progress-bar"></div>
+            </div>
+
+            <p id="nextGoal"></p>
+        </div>
+
+        <div class="dashboard-panel">
+            <h2>Continue Exploring</h2>
+            <p>Discover planets and add your favourites.</p>
+
+            <button type="button" class="dashboard-action"
+                    data-go-to-planets>
+                Explore Planets
+            </button>
+        </div>
+    </div>
+    <div class="dashboard-view" id="profileView" hidden>
+        <div class="dashboard-panel">
+            <h2>My Cosmic Profile</h2>
+
+            <img id="profileAvatar"
+                 class="profile-avatar"
+                 src="images/earth.jpg"
+                 alt="Profile picture">
+
+            <label for="profilePicture">Choose Profile Picture</label>
+            <input type="file" id="profilePicture"
+                   accept="image/png,image/jpeg,image/webp">
+
+            <form id="profileForm">
+                <label for="profileName">Full Name</label>
+                <input id="profileName" type="text"
+                       minlength="2" maxlength="60" required>
+                <label for="profileEmail">Email Address</label>
+                <input id="profileEmail" type="email" disabled>
+
+                <label for="profileBio">About Me</label>
+                <textarea id="profileBio" maxlength="250"
+                          rows="4"
+                          placeholder="Tell us about your space interests"></textarea>
+
+                <button type="submit" class="dashboard-action">
+                    Save Profile
+                </button>
+            </form>
+            <p id="profileMessage" aria-live="polite"></p>
+        </div>
+    </div>
+    <div class="dashboard-view" id="favouritesView" hidden>
+        <div class="dashboard-panel">
+            <h2>My Favourite Planets</h2>
+            <div id="favouritesList" class="saved-grid"></div>
+        </div>
+    </div>
+    <div class="dashboard-view" id="historyView" hidden>
+        <div class="dashboard-panel">
+            <h2>Recently Explored</h2>
+            <div id="historyList" class="saved-grid"></div>
+        </div>
+    </div>
+    <div class="dashboard-view" id="achievementsView" hidden>
+        <div class="dashboard-panel">
+            <h2>My Achievements</h2>
+            <p>Every discovery brings you closer to the stars.</p>
+            <div id="achievementsList" class="achievement-grid"></div>
+        </div>
+    </div>
+    <button type="button" id="logoutButton"
+            class="logout-btn">
+        Log Out
+    </button>
+</section>
+           <footer class="footer">
+            <p>Made with curiosity for the universe.</p>
+            <p>galaxy Universe</p>
+           </footer>   
+<div class="music-player">
+    <p class="music-title">COSMIC SOUND</p>
+
+    <audio controls loop preload="none">
+        <source src="music/music.mp3" type="audio/mpeg">
+         browser does not support audio.
+    </audio>
+</div>
+<div class="auth-overlay" id="authModal" aria-hidden="true">
+    <div class="auth-modal" role="dialog"
+         aria-modal="true" aria-labelledby="authTitle">
+
+        <button type="button" class="auth-close"
+                onclick="closeAuth()" aria-label="Close">
+            &times;
+        </button>
+
+        <p class="auth-kicker">✦ GALAXY UNIVERSE ✦</p>
+        <h2 id="authTitle">Welcome Back</h2>
+        <p class="auth-subtitle" id="authSubtitle">
+            Login to explore the cosmos
+        </p>
+        <form id="loginForm">
+            <label for="loginEmail">Email Address</label>
+            <input type="email" id="loginEmail"
+                   placeholder="Enter your email" required>
+
+            <label for="loginPassword">Password</label>
+            <input type="password" id="loginPassword"
+                   placeholder="Enter your password" required>
+
+            <button type="submit" class="auth-submit">
+                Login to Universe
+            </button>
+
+            <p class="auth-message" id="loginMessage"
+               aria-live="polite"></p>
+
+            <p class="auth-switch">
+                New explorer?
+                <button type="button"
+                        onclick="openAuth('signup')">
+                    Create Account
+                </button>
+            </p>
+        </form>
+        <form id="signupForm" hidden>
+            <label for="signupName">Full Name</label>
+            <input type="text" id="signupName"
+                   placeholder="Enter your name"
+                   minlength="2" maxlength="60" required>
+
+            <label for="signupEmail">Email Address</label>
+            <input type="email" id="signupEmail"
+                   placeholder="Enter your email" required>
+
+            <label for="signupPassword">Create Password</label>
+            <input type="password" id="signupPassword"
+                   placeholder="At least 8 characters"
+                   minlength="8" required>
+
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword"
+                   placeholder="Enter password again"
+                   minlength="8" required>
+
+            <button type="submit" class="auth-submit">
+                Create My Account
+            </button>
+
+            <p class="auth-message" id="signupMessage"
+               aria-live="polite"></p>
+
+            <p class="auth-switch">
+                Already registered?
+                <button type="button"
+                        onclick="openAuth('login')">
+                    Login
+                </button>
+            </p>
+        </form>
+
+    </div>
+</div>
+<script>
+    let demoUser = null;
+
+    const authModal = document.getElementById("authModal");
+    const loginForm = document.getElementById("loginForm");
+    const signupForm = document.getElementById("signupForm");
+
+    const authTitle = document.getElementById("authTitle");
+    const authSubtitle = document.getElementById("authSubtitle");
+    function openAuth(type) {
+        authModal.classList.add("active");
+        authModal.setAttribute("aria-hidden", "false");
+        loginForm.hidden = type !== "login";
+        signupForm.hidden = type !== "signup";
+
+        authTitle.textContent =
+            type === "login" ? "Welcome Back" : "Join the Galaxy";
+
+        authSubtitle.textContent =
+            type === "login"
+                ? "Login to explore the cosmos"
+                : "Create your cosmic explorer account";
+        clearMessages();
+
+        const firstInput = type === "login"
+            ? document.getElementById("loginEmail")
+            : document.getElementById("signupName");
+
+        firstInput.focus();
+    }
+    function closeAuth() {
+        authModal.classList.remove("active");
+        authModal.setAttribute("aria-hidden", "true");
+        clearMessages();
+    }
+    function clearMessages() {
+        document.querySelectorAll(".auth-message").forEach(message => {
+            message.textContent = "";
+            message.className = "auth-message";
+        });
+    }
+    function showMessage(id, message, type) {
+        const element = document.getElementById(id);
+        element.textContent = message;
+        element.className = "auth-message " + type;
+    }
+    signupForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const name = document.getElementById("signupName")
+            .value.trim();
+
+        const email = document.getElementById("signupEmail")
+            .value.trim().toLowerCase();
+
+        const password = document.getElementById("signupPassword")
+            .value;
+
+        const confirmPassword = document.getElementById("confirmPassword")
+            .value;
+        if (name.length < 2) {
+            showMessage(
+                "signupMessage",
+                "Please enter a valid name.",
+                "error"
+            );
+            return;
+        }
+
+        if (password.length < 8) {
+            showMessage(
+                "signupMessage",
+                "Password must contain at least 8 characters.",
+                "error"
+            );
+            return;
+        }
+        if (password !== confirmPassword) {
+            showMessage(
+                "signupMessage",
+                "Passwords do not match!",
+                "error"
+            );
+            return;
+        }
+        if (demoUser && demoUser.email === email) {
+            showMessage(
+                "signupMessage",
+                "This email is already registered in this demo.",
+                "error"
+            );
+            return;
+        }
+        demoUser = {
+            name: name,
+            email: email,
+            password: password
+        };
+
+        showMessage(
+            "signupMessage",
+            "Account created! You can now log in.",
+            "success"
+        );
+
+        signupForm.reset();
+        setTimeout(function() {
+            openAuth("login");
+            document.getElementById("loginEmail").value = email;
+
+            showMessage(
+                "loginMessage",
+                "Sign Up successful! Enter your password to continue.",
+                "success"
+            );
+        }, 1000);
+    });
+    loginForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const email = document.getElementById("loginEmail")
+            .value.trim().toLowerCase();
+
+        const password = document.getElementById("loginPassword")
+            .value;
+        if (!demoUser) {
+            showMessage(
+                "loginMessage",
+                "No demo account found. Please Sign Up first.",
+                "error"
+            );
+            return;
+        }
+
+        if (
+            email !== demoUser.email ||
+            password !== demoUser.password
+        ) {
+            showMessage(
+                "loginMessage",
+                "Incorrect email or password.",
+                "error"
+            );
+            return;
+        }
+        showMessage(
+            "loginMessage",
+            "Welcome, " + demoUser.name + "! Login successful.",
+            "success"
+        );
+        loginForm.reset();
+
+        setTimeout(function() {
+            closeAuth();
+        }, 1500);
+    });
+    authModal.addEventListener("click", function(event) {
+        if (event.target === authModal) {
+            closeAuth();
+        }
+    });
+
+    document.addEventListener("keydown", function(event) {
+        if (event.key === "Escape" &&
+            authModal.classList.contains("active")) {
+            closeAuth();
+        }
+    });
+</script>
+<script src="app.js" defer></script>
+<section class="rating-section">
+    <h2>Rate Our Universe</h2>
+    <p>How much do you like our Galaxy Universe?</p>
+
+    <div class="rating-stars">
+        <span data-rating="1">★</span>
+        <span data-rating="2">★</span>
+        <span data-rating="3">★</span>
+        <span data-rating="4">★</span>
+        <span data-rating="5">★</span>
+    </div>
+
+    <p id="rating-message">Choose your rating!</p>
+</section>
+
+<script>
+    const stars = document.querySelectorAll(".rating-stars span");
+    const message = document.getElementById("rating-message");
+
+    stars.forEach((star) => {
+        star.addEventListener("click", () => {
+            const rating = Number(star.dataset.rating);
+
+            stars.forEach((s) => {
+                s.classList.toggle(
+                    "active",
+                    Number(s.dataset.rating) <= rating
+                );
+            });
+
+            message.textContent =
+                `Thank you! You rated us ${rating} out of 5 stars.`;
+        });
+    });
+</script>
+<div class="moving-satellite">
+    <img src="images/satellite5.png" alt="Moving Satellite">
+</div>
+
+</body>
+</html>

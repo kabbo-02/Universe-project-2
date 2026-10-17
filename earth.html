@@ -1,0 +1,490 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Earth | Galaxy Universe</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* EARTH DETAILS PAGE */
+
+        .earth-page {
+            min-height: 100vh;
+            padding: 30px 8% 70px;
+            color: white;
+            background:
+                radial-gradient(circle at 20% 20%, rgba(100, 50, 200, 0.2), transparent 35%),
+                radial-gradient(circle at 80% 45%, rgba(20, 100, 220, 0.18), transparent 35%),
+                linear-gradient(135deg, #02030b, #08091d, #030510);
+        }
+
+        .earth-topbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 45px;
+        }
+
+        .earth-logo {
+            font-size: 25px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .earth-logo span {
+            color: #a78bfa;
+        }
+
+        .back-universe {
+            color: white;
+            text-decoration: none;
+            border: 1px solid #8b5cf6;
+            padding: 10px 18px;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+
+        .back-universe:hover {
+            background: #7c3aed;
+            box-shadow: 0 0 20px #7c3aed;
+        }
+
+        .earth-hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 35px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .earth-tag {
+            color: #93c5fd;
+            letter-spacing: 4px;
+            font-size: 13px;
+        }
+
+        .earth-description h1 {
+            font-size: clamp(45px, 7vw, 85px);
+            margin: 12px 0;
+            background: linear-gradient(90deg, #ffffff, #60a5fa, #c4b5fd);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .earth-description > p:not(.earth-tag) {
+            color: #c5c7df;
+            line-height: 1.9;
+            font-size: 16px;
+        }
+
+        .earth-image-area {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 0;
+        }
+
+        .earth-image {
+            width: min(100%, 390px);
+            aspect-ratio: 1;
+            object-fit: cover;
+            border-radius: 50%;
+            animation: earthFloat 5s ease-in-out infinite;
+            filter: drop-shadow(0 0 25px rgba(59, 130, 246, 0.55));
+        }
+
+        @keyframes earthFloat {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        .earth-facts {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 18px;
+            max-width: 1200px;
+            margin: 65px auto 0;
+        }
+
+        .earth-fact {
+            padding: 25px 18px;
+            background: rgba(30, 35, 75, 0.45);
+            border: 1px solid rgba(147, 197, 253, 0.22);
+            border-radius: 18px;
+            backdrop-filter: blur(10px);
+            transition: 0.3s;
+        }
+
+        .earth-fact:hover {
+            transform: translateY(-6px);
+            border-color: #60a5fa;
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.15);
+        }
+
+        .earth-fact span {
+            display: block;
+            color: #a5b4fc;
+            font-size: 12px;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+
+        .earth-fact h2 {
+            font-size: 23px;
+            margin-bottom: 8px;
+        }
+
+        .earth-fact p {
+            color: #b9bdd8;
+            font-size: 13px;
+            line-height: 1.7;
+        }
+
+        .earth-section {
+            max-width: 1200px;
+            margin: 65px auto 0;
+        }
+
+        .earth-section h2 {
+            font-size: 30px;
+            margin-bottom: 18px;
+        }
+
+        .earth-section > p {
+            color: #c5c7df;
+            line-height: 1.9;
+        }
+
+        .earth-facts-list {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 18px;
+            margin-top: 25px;
+        }
+
+        .earth-fact-item {
+            padding: 20px;
+            border-left: 3px solid #818cf8;
+            background: rgba(255, 255, 255, 0.04);
+            border-radius: 8px;
+            color: #d5d8f0;
+            line-height: 1.8;
+        }
+
+        .earth-fact-item strong {
+            color: #93c5fd;
+        }
+
+        .earth-footer {
+            text-align: center;
+            color: #777d9f;
+            padding-top: 60px;
+            font-size: 13px;
+        }
+
+        @media (max-width: 800px) {
+            .earth-hero {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .earth-image-area {
+                grid-row: 1;
+            }
+
+            .earth-image {
+                width: min(75%, 300px);
+            }
+
+            .earth-facts {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 480px) {
+            .earth-page {
+                padding: 22px 5% 45px;
+            }
+
+            .earth-facts,
+            .earth-facts-list {
+                grid-template-columns: 1fr;
+            }
+
+            .earth-description h1 {
+                font-size: 48px;
+            }
+
+            .earth-section h2 {
+                font-size: 25px;
+            }
+        }
+        
+/* STAR BACKGROUND */
+.earth-page {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+}
+
+.earth-topbar,
+.earth-hero,
+.earth-facts,
+.earth-section,
+.earth-footer {
+    position: relative;
+    z-index: 2;
+}
+
+/* MOVING SHOOTING STARS */
+.shooting-stars {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.shooting-stars span {
+    position: absolute;
+    top: -10%;
+    left: 0;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow:
+        0 0 6px 2px rgba(255, 255, 255, 0.8),
+        0 0 16px 3px rgba(147, 197, 253, 0.45);
+    opacity: 0;
+    animation: earthShootingStar 5s linear infinite;
+}
+
+.shooting-stars span:nth-child(1) {
+    left: 15%;
+    animation-delay: 0s;
+}
+
+.shooting-stars span:nth-child(2) {
+    left: 35%;
+    animation-delay: 2s;
+}
+
+.shooting-stars span:nth-child(3) {
+    left: 55%;
+    animation-delay: 4s;
+}
+
+.shooting-stars span:nth-child(4) {
+    left: 75%;
+    animation-delay: 1s;
+}
+
+.shooting-stars span:nth-child(5) {
+    left: 90%;
+    animation-delay: 3s;
+}
+
+.shooting-stars span:nth-child(6) {
+    left: 45%;
+    animation-delay: 5s;
+}
+
+.shooting-stars span:nth-child(7) {
+    left: 65%;
+    animation-delay: 6s;
+}
+
+@keyframes earthShootingStar {
+    0% {
+        transform: translate(0, 0) scale(0.5);
+        opacity: 0;
+    }
+
+    8% {
+        opacity: 1;
+    }
+
+    65% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-240px, 420px) scale(1.2);
+        opacity: 0;
+    }
+}
+
+/* SMALL STARS ACROSS THE SKY */
+.earth-page::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+    background-image:
+        radial-gradient(1px 1px at 10% 20%, white 99%, transparent),
+        radial-gradient(2px 2px at 30% 70%, #c4b5fd 99%, transparent),
+        radial-gradient(1px 1px at 55% 35%, white 99%, transparent),
+        radial-gradient(1px 1px at 75% 15%, #93c5fd 99%, transparent),
+        radial-gradient(2px 2px at 90% 80%, white 99%, transparent),
+        radial-gradient(1px 1px at 45% 90%, white 99%, transparent);
+    background-size: 220px 220px;
+    animation: earthStarsTwinkle 4s ease-in-out infinite alternate;
+}
+
+@keyframes earthStarsTwinkle {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+    </style>
+</head>
+
+<body>
+    
+<!-- BACKGROUND STARS -->
+<div class="shooting-stars">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+
+<div class="earth-page">
+
+    <header class="earth-topbar">
+        <div class="earth-logo">GALAXY<span>.</span></div>
+
+        <a href="index.html" class="back-universe">
+            ← Back to Universe
+        </a>
+    </header>
+
+    <main>
+
+        <section class="earth-hero">
+
+            <div class="earth-description">
+                <p class="earth-tag">OUR HOME PLANET</p>
+
+                <h1>Planet Earth</h1>
+
+                <p>
+                    Earth is our home and the only planet currently known
+                    to support life. Its oceans, atmosphere, mountains and
+                    diverse ecosystems make it a remarkable world in our
+                    solar system.
+                </p>
+            </div>
+
+            <div class="earth-image-area">
+                <img
+                    src="images/earth3.png"
+                    alt="Planet Earth seen from space"
+                    class="earth-image"
+                >
+            </div>
+
+        </section>
+
+        <section class="earth-facts">
+
+            <article class="earth-fact">
+                <span>DIAMETER</span>
+                <h2>12,742 km</h2>
+                <p>Approximate diameter of Earth.</p>
+            </article>
+
+            <article class="earth-fact">
+                <span>AGE</span>
+                <h2>4.54 Billion</h2>
+                <p>Approximately 4.54 billion years old.</p>
+            </article>
+
+            <article class="earth-fact">
+                <span>MOONS</span>
+                <h2>1</h2>
+                <p>Our natural satellite is the Moon.</p>
+            </article>
+
+            <article class="earth-fact">
+                <span>DAY LENGTH</span>
+                <h2>24 Hours</h2>
+                <p>Approximately one rotation period.</p>
+            </article>
+
+        </section>
+
+        <section class="earth-section">
+            <h2>About Earth</h2>
+
+            <p>
+                Earth is the third planet from the Sun. Around 71% of its
+                surface is covered by water. Its atmosphere helps regulate
+                temperature and protects life. Earth travels around the Sun
+                once approximately every 365.25 days.
+            </p>
+        </section>
+
+        <section class="earth-section">
+            <h2>Earth's Key Features</h2>
+
+            <div class="earth-facts-list">
+
+                <div class="earth-fact-item">
+                    <strong>Atmosphere:</strong>
+                    Mostly nitrogen and oxygen, with smaller amounts of
+                    other gases.
+                </div>
+
+                <div class="earth-fact-item">
+                    <strong>Surface:</strong>
+                    Oceans, continents, mountains, forests and deserts.
+                </div>
+
+                <div class="earth-fact-item">
+                    <strong>Temperature:</strong>
+                    The global average surface temperature is about 15°C,
+                    though it varies by location and measurement method.
+                </div>
+
+                <div class="earth-fact-item">
+                    <strong>Natural Satellite:</strong>
+                    The Moon affects ocean tides and is Earth's only
+                    permanent natural satellite.
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="earth-footer">
+        <p>GALAXY UNIVERSE · Explore Beyond the Stars ✦</p>
+    </footer>
+
+</div>
+
+</body>
+</html>
